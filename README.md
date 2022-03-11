@@ -29,11 +29,11 @@ This project contains two major pieces. The python multi-threaded function, whic
 # Hardware:
 
 This project expects the rasbperryPi to have a few devices connected to it. The first is an Adafruit Si7021 Humidity/temperature sensor attached to the primary I2C bus. The second is three 24VAC capable relays. These relays need to be connected to the house's heating system to the heat_Call, cool, and fan control lines, with the relay toggling between the 24V Hot line and the ground line (or open). The control for these relays should be to:
-| GPIO | Relay |
-----------------
-| 23 | fan 
-| 24 | Heat Call
-| 25 | Cool Call
+| GPIO | Relay     |
+|------|-----------|
+| 23   | fan       |
+| 24   | Heat Call |
+| 25   | Cool Call |
 
 # Configuration:
 
@@ -44,8 +44,8 @@ Almost all configuration can be done directly from the webpage. Fixing the IP Ad
 You can log data in order to optimize the setpoint throughout the day (or if you just like data). Change the SaveData variable in Thermostat.py to any value > 0 to enable saving. The data will be saved to a heat_data.csv and a cool_data.csv in the working directory.
 
 Good Luck and happy coding  
-   |\__/,|   (`\  
-   |o o  |__ _)  
- _.( T   )  `  /  
-((_ `^--' /_<  \  
-`` `-'(((/  (((/  
+   |\__/,|   (`\       
+   |o o  |__ _)     <br>
+ _.( T   )  `  /    <br>
+((_ `^--' /_<  \    <br>
+`` `-'(((/  (((/    
