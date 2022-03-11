@@ -51,6 +51,8 @@ outside_temp = 10;
 outside_hum = 10;
 outside_uv = 5;
 
+SaveData = -1;
+
 #Define variables to define which setting thermostat is set to
 F = 0 # 0 is auto , 1 is on
 H = 0 # 0 is off , 1 is heat , 2 is air conditioner
@@ -108,9 +110,10 @@ def save_data( fname , delta_time , delta_temp , set_temp , thres ):
 	global outside_temp;
 	global outside_hum;
 	global outside_uv;
-	var_file = open( fname , 'a' );
-	var_file.write( '\n%f,%f,%f,%f,%f,%f,%f,%f' % ( delta_time , delta_temp , set_temp , thres , current_hum , outside_temp , outside_hum , outside_uv ) );
-	var_file.close();
+	if SaveData > 0:
+		var_file = open( fname , 'a' );
+		var_file.write( '\n%f,%f,%f,%f,%f,%f,%f,%f' % ( delta_time , delta_temp , set_temp , thres , current_hum , outside_temp , outside_hum , outside_uv ) );
+		var_file.close();
 def exit_handler():
 	#will set all relays to off after an exit
 	GP.output( fan , GP.HIGH );

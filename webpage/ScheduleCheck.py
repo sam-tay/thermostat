@@ -6,7 +6,7 @@ import urllib.parse
 def check_schedule():
 	#must be placed within function to import and run as script
 	var_dir = '/home/rugged/Desktop/python-internet-test/webpage/variables';
-	#var_dir = '/home/pi/Desktop/Thermostat/Webpage/variables';
+	#var_dir = '/home/pi/Desktop/thermostat/webpage/variables';
 	statusname = var_dir + '/curr_mode.sam';
 
 	var_file = open( statusname , 'r' );

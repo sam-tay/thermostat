@@ -3,7 +3,8 @@ from forecastiopy import *
 def update_weather():
 	#Must be placed in a function to call in both Thermostat and from command line...
 	Co_Springs = [ 38.875899,-104.770032 ]
-	API_key = '2f1478f0ddc5d2140c2dd07872344529'
+	API_key = ''
+	print( "Removed my API key. Get your own fucking key :)" )
 
 	fio = ForecastIO.ForecastIO(API_key, latitude=Co_Springs[0], longitude=Co_Springs[1])
 
