@@ -44,8 +44,9 @@ Almost all configuration can be done directly from the webpage. Fixing the IP Ad
 You can log data in order to optimize the setpoint throughout the day (or if you just like data). Change the SaveData variable in Thermostat.py to any value > 0 to enable saving. The data will be saved to a heat_data.csv and a cool_data.csv in the working directory.
 
 Good Luck and happy coding  
-   |\__/,|   (`\       
-   |o o  |__ _)     <br>
- _.( T   )  `  /    <br>
-((_ `^--' /_<  \    <br>
-`` `-'(((/  (((/    
+
+		  |\__/,|   (`\
+		  |o o  |__ _) |
+		_.( T   )  `  / 
+		((_ `^--' /_<  \
+		`` `-'(((/  (((/
