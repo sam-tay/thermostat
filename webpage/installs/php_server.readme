@@ -1,0 +1,4 @@
+Install the php package in command line:
+sudo apt install php7.2-cli
+run from woring dir of website:
+php -S localhost:PORT#

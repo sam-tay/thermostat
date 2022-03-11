@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: forecastiopy
+Version: 0.1
+Summary: A wrapper to access weather data provided by forecast.io
+Home-page: https://github.com/bitpixdigital/forecastiopy
+Author: Angel Hernandez
+Author-email: info@bitpixdigital.com
+License: Eclipse Public License
+Description: UNKNOWN
+Platform: UNKNOWN
